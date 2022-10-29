@@ -1,0 +1,88 @@
+<html>
+<head>
+<script>
+function validate()
+{
+var
+name= document.getElementById("stud_name").value;
+if( name=="")
+{
+document.getElementById("error_name").innerHTML="Please Enter the Name";
+}
+var
+email= document.getElementById("stud_email").value;
+if( email=="")
+{
+document.getElementById("error_email").innerHTML="Please Enter the Email";
+}
+var
+fathername= document.getElementById("stud_fathername").value;
+if( fathername=="")
+{
+document.getElementById("error_fathername").innerHTML="Please Enter the Father'sname";
+}
+var
+mothername= document.getElementById("stud_mothername").value;
+if( mothername=="")
+{
+document.getElementById("error_mothername").innerHTML="Please Enter the Mother'sname";
+}
+var
+address= document.getElementById("stud_address").value;
+if( address=="")
+{
+document.getElementById("error_address").innerHTML="Please Enter the Address";
+}
+var
+mobileno= document.getElementById("stud_mobileno").value;
+if( mobileno=="")
+{
+document.getElementById("error_mobileno").innerHTML="Please Enter the Mobileno";
+}
+}
+</script>
+</head>
+<body>
+<form name="registration" method=" " action=" ">
+<table border="2">
+<tr>
+<td colspan="2">Student Details</td>
+</tr>
+<tr>
+<td>Name</td>
+<td><input type="text" name="stud_name" id="stud_name"/></td>
+<div id= "error_name"></div>
+</tr>
+<tr>
+<td>Email</td>
+<td><input type="text" name="stud_email" id="stud_email"/></td>
+<div id= "error_email"></div>
+</tr>
+<tr>
+<td>Father's Name</td>
+<td><input type="text" name="stud_fathername" id="stud_fathername"/></td>
+<div id= "error_fathername"></div>
+</tr>
+<tr>
+<td>Mother's Name</td>
+<td><input type="text" name="stud_mothername" id="stud_mothername"/></td>
+<div id= "error_mothername"></div>
+</tr>
+<tr>
+<td>Address</td>
+<td><input type="text" name="stud_address" id="stud_address"/></td>
+<div id= "error_address"></div>
+</tr>
+<tr>
+<td>Mobile Number</td>
+<td><input type="text" name="stud_mobileno" id="stud_mobileno"/></td>
+<div id= "error_mobileno"></div>
+</tr>
+<tr>
+<td colspan="2">
+<input type="button" value="click" onclick="validate()"/></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
